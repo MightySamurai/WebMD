@@ -16,8 +16,7 @@ public class WebMDSignUpActions {
 	}
 
 	public void getwebMDSignUpPage() {
-		SetupDrivers.chromeDriver
-				.get("https://member.webmd.com/register?appid=1&returl=https%3A%2F%2Fwww.webmd.com%2F");
+		SetupDrivers.chromeDriver.get("https://member.webmd.com/register?appid=1&returl=https%3A%2F%2Fwww.webmd.com%2F");
 		SetupDrivers.chromeDriver.manage().window().maximize();
 		SetupDrivers.chromeDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		SetupDrivers.chromeDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
