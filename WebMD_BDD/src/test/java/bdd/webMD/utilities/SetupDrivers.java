@@ -3,6 +3,7 @@ package bdd.webMD.utilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SetupDrivers {
@@ -14,6 +15,7 @@ public class SetupDrivers {
 		
 		//System.setProperty("webdriver.chrome.driver","chromedriver");
 		chromeDriver = new ChromeDriver();
+		
 	}
 
 	public static WebDriver getChromeDriver() {

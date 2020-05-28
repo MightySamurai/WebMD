@@ -31,10 +31,12 @@ public class WebMDSignUpActions {
 		signUpPageElements.Password.sendKeys(str);
 	}
 
-	public int inputDateOfBirth(int i) {
-		signUpPageElements.DateOfBirth.sendKeys();
-		return signUpPageElements.DateOfBirth.hashCode();
-	}
+	public void inputDateOfBirth() {
+		signUpPageElements.DateOfBirth.click();
+		signUpPageElements.DateOfBirth.sendKeys("01011992");	
+		}
+		
+		
 
 	public void signUpBtn() {
 		signUpPageElements.SignUpBtn.click();

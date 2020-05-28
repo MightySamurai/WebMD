@@ -31,6 +31,7 @@ public class WebMDFindDoctorActions {
 	}
 
 	public void inputsearchKey(String str) {
+		
 		findDoctorElementPage.searchKey.sendKeys(str);
 	}
 
@@ -40,6 +41,7 @@ public class WebMDFindDoctorActions {
 
 	public void inputsearchBtn() {
 		findDoctorElementPage.searchBtn.click();
+
 	
 	}
 

@@ -31,10 +31,18 @@ public class WebMDSignUpStepDef {
 
 	}
 
-	@Given("^user input valid date of birth \"([^\"]*)\"$")
-	public void user_input_valid_date_of_birth(String DateOfBirth) {
-
-		webMDSignUp.inputDateOfBirth(01/01/1992);
+	/*
+	 * @Given("^user input valid date of birth \"([^\"]*)\"$") public void
+	 * user_input_valid_date_of_birth(String DateOfBirth) {
+	 * 
+	 * webMDSignUp.inputDateOfBirth(DateOfBirth);
+	 * 
+	 * }
+	 */
+	
+	@Given("^user input valid DOB$")
+	public void user_input_valid_DOB(){
+		webMDSignUp.inputDateOfBirth();
 
 	}
 

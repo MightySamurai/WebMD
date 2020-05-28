@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 22 23:27:16 EDT 2020</td>
+<td>Started on:</td><td>Tue May 26 18:22:24 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>89 seconds (89930 ms)</td>
+<tr><td>Total time:</td><td>158 seconds (158762 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -115,8 +115,8 @@ Caused by: java.lang.IllegalArgumentException: Keys to send should be a not null
 	at bdd.webMD.actionPage.WebMDSignUpActions.inputDateOfBirth(WebMDSignUpActions.java:35)
 	at bdd.webMD.stepDef.WebMDSignUpStepDef.user_input_valid_date_of_birth(WebMDSignUpStepDef.java:37)
 	at ✽.And user input valid date of birth &quot;01/01/1992&quot;(1_WebMDSignUp.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1466066315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1466066315'><pre>cucumber.runtime.CucumberException: java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+</pre></div><a href='#' onClick='toggleBox("stack-trace796851467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace796851467'><pre>cucumber.runtime.CucumberException: java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -156,7 +156,7 @@ Caused by: java.lang.IllegalArgumentException: Keys to send should be a not null
 	at bdd.webMD.stepDef.WebMDSignUpStepDef.user_input_valid_date_of_birth(WebMDSignUpStepDef.java:37)
 	at ✽.And user input valid date of birth &quot;01/01/1992&quot;(1_WebMDSignUp.feature:7)
 </pre></div></td>
-<td>9</td>
+<td>6</td>
 <td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
 <tr>
 <td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: WebMd login feature</td>
@@ -197,8 +197,8 @@ Caused by: java.lang.AssertionError: expected [WebMD - Better Information. Bette
 	at org.testng.Assert.assertEquals(Assert.java:463)
 	at bdd.webMD.stepDef.WebMDSignInStepDef.user_should_be_able_to_signin(WebMDSignInStepDef.java:61)
 	at ✽.Then User should be able to signin(2_WebMDSignIn.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace132065521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace132065521'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [WebMD - Better Information. Better Health.] but found [WebMD - Better information. Better health.]
+</pre></div><a href='#' onClick='toggleBox("stack-trace706960270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace706960270'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [WebMD - Better Information. Better Health.] but found [WebMD - Better information. Better health.]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -238,6 +238,142 @@ Caused by: java.lang.AssertionError: expected [WebMD - Better Information. Bette
 </pre></div></td>
 <td>16</td>
 <td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
+<tr>
+<td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: WebMD search Engine Feature</td>
+<td><div><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;global-nav-search&apos;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MACBOOKs-MacBook-Pro.local&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;9.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/9w/l62tfkt54w5...}, goog:chromeOptions: {debuggerAddress: localhost:62752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1c749b9932e1030eed4bce15b2ec2de3
+*** Element info: {Using=xpath, value=//*[@id=&apos;global-nav-search&apos;]}
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;global-nav-search&apos;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MACBOOKs-MacBook-Pro.local&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;9.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/9w/l62tfkt54w5...}, goog:chromeOptions: {debuggerAddress: localhost:62752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1c749b9932e1030eed4bce15b2ec2de3
+*** Element info: {Using=xpath, value=//*[@id=&apos;global-nav-search&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at bdd.webMD.actionPage.WebMDSearchButtonActions.inputSearchBox(WebMDSearchButtonActions.java:28)
+	at bdd.webMD.stepDef.WebMDSearchButtonStepDef.user_input_Data_in_the_search(WebMDSearchButtonStepDef.java:15)
+	at ✽.When User input Data &quot;Airplane&quot; in the search(4_WebMDSearchButton.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace416579056", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace416579056'><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;global-nav-search&apos;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MACBOOKs-MacBook-Pro.local&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;9.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/9w/l62tfkt54w5...}, goog:chromeOptions: {debuggerAddress: localhost:62752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1c749b9932e1030eed4bce15b2ec2de3
+*** Element info: {Using=xpath, value=//*[@id=&apos;global-nav-search&apos;]}
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;global-nav-search&apos;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MACBOOKs-MacBook-Pro.local&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;9.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/9w/l62tfkt54w5...}, goog:chromeOptions: {debuggerAddress: localhost:62752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1c749b9932e1030eed4bce15b2ec2de3
+*** Element info: {Using=xpath, value=//*[@id=&apos;global-nav-search&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at bdd.webMD.actionPage.WebMDSearchButtonActions.inputSearchBox(WebMDSearchButtonActions.java:28)
+	at bdd.webMD.stepDef.WebMDSearchButtonStepDef.user_input_Data_in_the_search(WebMDSearchButtonStepDef.java:15)
+	at ✽.When User input Data &quot;Airplane&quot; in the search(4_WebMDSearchButton.feature:10)
+</pre></div></td>
+<td>78</td>
+<td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -259,37 +395,32 @@ Caused by: java.lang.AssertionError: expected [WebMD - Better Information. Bette
 <tr>
 <td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Webmd dropdown feature</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
 <tr>
 <td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: WebMD Homepage Validation Fetures</td>
 <td></td>
-<td>3</td>
+<td>4</td>
 <td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
 <tr>
 <td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: WebMD Connect with Social Media Feature</td>
 <td></td>
-<td>17</td>
+<td>18</td>
 <td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
 <tr>
 <td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: WebMD Coronavirus Update Using Map Feature</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
 <tr>
 <td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: WebMD Medicine Price Low to High Feature</td>
 <td></td>
-<td>3</td>
-<td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
-<tr>
-<td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: WebMD Search Engine Feature</td>
-<td></td>
-<td>4</td>
+<td>1</td>
 <td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
 <tr>
 <td title='bdd.webMD.runner.WebMDTestRunner.feature()'><b>feature</b><br>Test class: bdd.webMD.runner.WebMDTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: WebMD User Symptoms Checker Feature</td>
 <td></td>
-<td>11</td>
+<td>12</td>
 <td>bdd.webMD.runner.WebMDTestRunner@626abbd0</td></tr>
 </table><p>
 </body>
