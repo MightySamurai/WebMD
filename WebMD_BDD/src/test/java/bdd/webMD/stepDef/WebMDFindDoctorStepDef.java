@@ -1,8 +1,10 @@
 package bdd.webMD.stepDef;
 
+import org.testng.Assert;
+
 import bdd.webMD.actionPage.WebMDFindDoctorActions;
 import cucumber.api.java.en.Given;
-
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class WebMDFindDoctorStepDef {
@@ -14,6 +16,7 @@ public class WebMDFindDoctorStepDef {
 	@Given("^WebMD homepage launched$")
 	public void webmd_homepage_launched() {
 		webMDFindDoc.getWebMDHomePage();
+
 		
 	}
 
@@ -36,6 +39,16 @@ public class WebMDFindDoctorStepDef {
 		webMDFindDoc.inputsearchBtn();
 		
 	}
+	
+	@Then("^User should be able to find a doctor$")
+	public void user_should_be_able_to_find_a_doctor() {
+		String expectedTitle = "WebMD Physician Directory - Find a Doctor in Your Area";
+		String actualTitle = webMDFindDoc.getFindDocPageTitle();
+		Assert.assertEquals(actualTitle, expectedTitle);
+		
+	}
+	
+	
 
 
 }

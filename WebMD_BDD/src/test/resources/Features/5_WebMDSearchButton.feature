@@ -6,18 +6,17 @@ Feature: WebMD search Engine Feature
     Given WebMd login page launched
 
   Scenario: Verify search box using wrong data
-  
-    When User input Data "Airplane" in the search
+    When User input Data "Yellowpig" in the search
     And User clicks on search icon
     Then User should recieve an error text
 
-  #Scenario Outline: Verify search box functionality using correct data
-   # When User input correctData "<data>" in the search
-    #And User clicks on search icon
-   # Then User should see result page
+  Scenario Outline: Verify search box functionality using correct data
+    When User input correctData "<data>" in the search
+    And User clicks on search icon
+    Then User should see result page
 
-   # Examples: 
+    Examples: 
       | data          |
       | Advil         |
       | Find a Doctor |
-      | Airplane      |
+      | Coronavirus   |

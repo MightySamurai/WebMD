@@ -45,6 +45,7 @@ public class WebMDPriceLowToHighActions {
 	 
 	
 	public void inputNumberOfQuant(String str) {
+		// priceElementPage.NumberOfQuant.click();
 		priceElementPage.NumberOfQuant.sendKeys(str);
 
 	}

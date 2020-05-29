@@ -12,7 +12,6 @@ public class WebMDMouseHoverStepDef{
 	WebMDMouseHoverActions webMDMouseHover = new WebMDMouseHoverActions () ;
 
 	
-	
 	@When("^user hover over LIVING HEALTHY section$")
 	public void user_hover_over_LIVING_HEALTHY_section()  {
 		webMDMouseHover.hoverlivingHealthy();

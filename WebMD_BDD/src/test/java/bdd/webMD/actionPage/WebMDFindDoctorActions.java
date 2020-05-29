@@ -22,7 +22,6 @@ public class WebMDFindDoctorActions {
 		SetupDrivers.chromeDriver.manage().window().maximize();
 		SetupDrivers.chromeDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		SetupDrivers.chromeDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-	
 
 	}
 
@@ -31,18 +30,22 @@ public class WebMDFindDoctorActions {
 	}
 
 	public void inputsearchKey(String str) {
-		
+
 		findDoctorElementPage.searchKey.sendKeys(str);
 	}
 
 	public void inputzipCode(String str) {
-		findDoctorElementPage.searchKey.sendKeys(str);
+		findDoctorElementPage.zipCode.sendKeys(str);
 	}
 
 	public void inputsearchBtn() {
 		findDoctorElementPage.searchBtn.click();
 
-	
+	}
+
+	public String getFindDocPageTitle() {
+		String webMDFindDocPageTitle = SetupDrivers.chromeDriver.getTitle();
+		return webMDFindDocPageTitle;
 	}
 
 }
