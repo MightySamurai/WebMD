@@ -1,5 +1,5 @@
 Feature: WebMd login feature 
-  This feature will test WebMd login funtionality 
+  This feature will test WebMd login functionality 
   
   Background: 
   	Given WebMd login page launched

@@ -3,9 +3,10 @@ import cucumber.api.java.After;
 
 public class AfterAction {
 	
-	// @After
+	@After
 	public void afterAction () {
 		SetupDrivers.tearDownChromeDriver();
+		
 	}
 
 }

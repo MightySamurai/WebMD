@@ -22,9 +22,11 @@ public class WebMDSignInStepDef {
 	}
 
 	@When("^user input wrong Email \"([^\"]*)\" and wrong Password \"([^\"]*)\"$")
-	public void user_input_wrong_Email_and_wrong_Password(String Email, String password)  {
+	
+	public void user_input_wrong_Email_and_wrong_Password(String Email, String password) throws Exception {
 		webMDSignIn.inputEmail(Email);
-		webMDSignIn.inputPassword(password);  
+		webMDSignIn.inputPassword(password); 
+		
 	}
 
 	@When("^User clicks on SignIn button$")
@@ -47,7 +49,7 @@ public class WebMDSignInStepDef {
 	}
 
 	@When("^user input correct Email \"([^\"]*)\" and correct Password \"([^\"]*)\"$")
-	public void user_input_correct_Email_and_correct_Password(String Email, String Password)  {
+	public void user_input_correct_Email_and_correct_Password(String Email, String Password) throws Exception  {
 		webMDSignIn.inputEmail(Email);
 		webMDSignIn.inputPassword(Password);
 	    

@@ -21,6 +21,24 @@ public class WebMDMapActionPage {
 		SetupDrivers.chromeDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		SetupDrivers.chromeDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
+	public void popUP () {
+		MapPageElements.popup.click();
+	}
+	public void coronaUpdateBtn () {
+		MapPageElements.coronaUpdate.click();
+		
+		
+	}
+	public void usaMap () {
+		MapPageElements.nyMap.click();
+		
+	}
+	public String updateResult () {
+		return MapPageElements.nyUpdate.getText();
+		
+	}
+	
+	}
 	
 	
-}
+

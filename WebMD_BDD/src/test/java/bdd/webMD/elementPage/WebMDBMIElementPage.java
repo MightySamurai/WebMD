@@ -9,7 +9,10 @@ public class WebMDBMIElementPage {
 	public WebElement BMICalc;
 	
 	@FindBy(xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div[1]/form/div[1]/label[1]/input")
-	public WebElement height;
+	public WebElement feet;
+	
+	@FindBy(xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div[1]/form/div[1]/label[2]/input")
+	public WebElement inch;
 	
 	@FindBy(xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div[1]/form/div[2]/label/input")
 	public WebElement weight;
@@ -17,8 +20,11 @@ public class WebMDBMIElementPage {
 	@FindBy(xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div[1]/form/div[3]/button")
 	public WebElement calcBtn;
 	
-	@FindBy (xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div")
+	@FindBy (xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div/h3")
 	public WebElement result;
+	
+	@FindBy (id = "webmdHoverClose")
+	public WebElement popUp;
 	
 	
 	

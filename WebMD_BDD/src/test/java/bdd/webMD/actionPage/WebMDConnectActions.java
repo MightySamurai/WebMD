@@ -28,6 +28,10 @@ public class WebMDConnectActions {
 		SetupDrivers.chromeDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
 	
+	public void popUP () {
+		connectPageElements.popup.click();
+	}
+	
 	public void scrollDown () {
 		
 		js.executeScript("window.scrollBy(0,1900)");
