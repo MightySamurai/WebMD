@@ -15,25 +15,30 @@ public class WebMDMapActionPage {
 		this.MapPageElements = new WebMDMapElementPage ();
 		PageFactory.initElements(SetupDrivers.chromeDriver, MapPageElements);
 	}
-	public void getWebMDHomePage () {
-		SetupDrivers.chromeDriver.get("https://www.https://www.webmd.com/");
+	public void getWebMDCoronaPage () {
+		SetupDrivers.chromeDriver.get("https://www.webmd.com/coronavirus");
 		SetupDrivers.chromeDriver.manage().window().maximize();
+
 		SetupDrivers.chromeDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		SetupDrivers.chromeDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
-	public void popUP () {
-		MapPageElements.popup.click();
-	}
-	public void coronaUpdateBtn () {
-		MapPageElements.coronaUpdate.click();
+	//public void popUP () {
+	//	MapPageElements.popup.click();
+	//}
+	//public void coronaUpdateBtn () {
+		//MapPageElements.coronaUpdate.click();
 		
 		
-	}
-	public void usaMap () {
+	 
+	public void usaMap () throws Exception { 
+		Thread.sleep(5000);
 		MapPageElements.nyMap.click();
+		Thread.sleep(5000);
+		
 		
 	}
-	public String updateResult () {
+	public String updateResult () throws Exception {
+		Thread.sleep(5000);
 		return MapPageElements.nyUpdate.getText();
 		
 	}
