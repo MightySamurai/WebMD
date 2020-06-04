@@ -11,7 +11,7 @@ Feature: WebMd login feature
             Then User should receive an error message
 
    
-    @Signin      
+    @Sprint1 @Signin      
  	Scenario Outline: Verify user login using the correct email and password
            	And user input correct Email "<Email>" and correct Password "<Password>"
             And User clicks on SignIn button

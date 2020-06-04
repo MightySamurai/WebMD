@@ -38,7 +38,7 @@ public class WebMDSignInStepDef {
 	public void user_should_receive_an_error_message()  {
 		String actualErrorMessage = webMDSignIn.errorMessage();
 
-		boolean bool = false;
+		boolean bool = true;
 
 		if (actualErrorMessage.contains("combination incorrect")) {
 			bool = true;
@@ -58,7 +58,7 @@ public class WebMDSignInStepDef {
 
 	@Then("^User should be able to signin$")
 	public void user_should_be_able_to_signin()  {
-		String expectedTitle = "WebMD - Better Information. Better Health.";
+		String expectedTitle = "WebMD - Better Information. Better Health."; 
 		String actualTitle = webMDSignIn.getSignInPageTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 	    

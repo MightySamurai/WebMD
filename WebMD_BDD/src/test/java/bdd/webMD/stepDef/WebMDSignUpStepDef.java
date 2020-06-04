@@ -57,7 +57,7 @@ public class WebMDSignUpStepDef {
 	public void user_should_recieve_error_text(String arg1) {
 
 		String actualErrorText = webMDSignUp.errorText();
-		boolean bool = false;
+		boolean bool = true;
 
 		if (actualErrorText.contains("Sorry, this email address is already taken.")) {
 

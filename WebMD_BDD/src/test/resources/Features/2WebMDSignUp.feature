@@ -2,6 +2,8 @@ Feature: Webmd signup feature
   
   This feature will test Webmd signup funtionality
 
+
+ @Sprint1 @SignUp
   Scenario: verify user signup using email password and date of birth
     
     Given webMD SignUp page launched

@@ -10,10 +10,13 @@ public class WebMDFindDoctorElementPage {
 	@FindBy(xpath = "//*[@id=\'searchkeywords_desktop\']")
 	public WebElement searchKey;
 	
+	@FindBy (xpath = "//strong[contains(text(),'Chest Pain')]")
+	public WebElement chestPain;
+	
 	@FindBy(xpath = "//*[@id=\'searchlocation_desktop\']")
 	public WebElement zipCode;
 	
-	@FindBy(xpath = "//*[@id=\'serp-block-form\']/div/div/div[4]/div/div/button")
+	@FindBy(xpath = "//button[@class='webmd-button webmd-button--primary webmd-button--large is-stretch']")
 	public WebElement searchBtn;
 
 }

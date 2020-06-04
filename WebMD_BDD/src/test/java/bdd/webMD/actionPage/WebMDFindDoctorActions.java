@@ -2,6 +2,8 @@ package bdd.webMD.actionPage;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import bdd.webMD.elementPage.WebMDFindDoctorElementPage;
@@ -9,6 +11,8 @@ import bdd.webMD.elementPage.WebMDFindDoctorElementPage;
 import bdd.webMD.utilities.SetupDrivers;
 
 public class WebMDFindDoctorActions {
+	Actions act = new Actions(SetupDrivers.chromeDriver);
+	JavascriptExecutor jvSE = (JavascriptExecutor) SetupDrivers.chromeDriver;
 	WebMDFindDoctorElementPage findDoctorElementPage;
 
 	public WebMDFindDoctorActions() {
@@ -30,8 +34,9 @@ public class WebMDFindDoctorActions {
 	}
 
 	public void inputsearchKey(String str) {
-
 		findDoctorElementPage.searchKey.sendKeys(str);
+		act.moveToElement(findDoctorElementPage.chestPain).build().perform();
+		findDoctorElementPage.chestPain.click();
 	}
 
 	public void inputzipCode(String str) {
@@ -39,6 +44,7 @@ public class WebMDFindDoctorActions {
 	}
 
 	public void inputsearchBtn() {
+		act.moveToElement(findDoctorElementPage.searchBtn).build().perform();
 		findDoctorElementPage.searchBtn.click();
 
 	}

@@ -40,10 +40,7 @@ public class WebMDHomePageValidationStepDef {
 
 		Assert.assertEquals(bool, true);
 		
-	
-		
-		
-		
+		System.out.println("Hex Color : " + expected);
 
 	}
 

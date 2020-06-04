@@ -45,11 +45,11 @@ public class WebMDHomePageActions {
 		return HomePageElements.subscribeBtn.getCssValue("background-color");
 
 	}
-	public String hexColor () {
-		return  Color.fromString(color()).asHex ();
-		
-	}
 
+	public String hexColor() {
+		return Color.fromString(color()).asHex();
+
+	}
 	
 
 }

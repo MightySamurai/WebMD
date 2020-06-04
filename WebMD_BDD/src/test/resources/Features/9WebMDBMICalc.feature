@@ -5,7 +5,7 @@ Feature: WebMD BMI Calculator Feature
   Background: 
     Given WebMD homepage launched
 
-  @Sprint1 
+  @Sprint1 @BMI
   Scenario: Verify user is able to use BMI calculator using height and weight
     When User clicks on BMI calculator under popular tools 
     And User input height feet "4" inch "8"

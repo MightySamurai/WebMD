@@ -2,7 +2,7 @@ Feature: WebMD Facebook Connect Feature
  
   This feature will verify WebMD connection with Facebook
   
-
+ @Sprint1 @Connect
   Scenario: Verify social media links from homepage drop down bar
     Given WebMD homepage launched
    
