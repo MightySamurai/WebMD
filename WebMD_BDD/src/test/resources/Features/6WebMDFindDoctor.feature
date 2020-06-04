@@ -7,6 +7,6 @@ Feature: WebMD Find Doctor Feature
     Given WebMD homepage launched
     
     When User clicks on FIND A DOCTOR
-    And User input condition "Chest Pain" and ZipCode ""
+    And User input condition "Chest Pain" and ZipCode "10452"
     And User clicks Search for doctors button
     Then User should be able to find a doctor

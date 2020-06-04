@@ -1,6 +1,6 @@
 Feature: Webmd signup feature
   
-  This feature will test Webmd signup funtionality
+  This feature will test Webmd signup functionality
 
 
  @Sprint1 @SignUp

@@ -43,6 +43,8 @@ public class WebMDBMIStepDef {
 			bool = true;
 		
 			Assert.assertEquals(bool, true);
+			
+			System.out.println("Actual result: " + actualResult);
 
 		}
 

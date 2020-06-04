@@ -6,7 +6,7 @@
       <class name="bdd.webMD.runner.WebMDTestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="1 2 5"/>
+          <include name="feature" invocation-numbers="2 4"/>
           <include name="generateExtendReport"/>
           <include name="tearDownClass"/>
         </methods>

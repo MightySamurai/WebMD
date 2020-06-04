@@ -1,9 +1,11 @@
-Feature: WebMD Homepage Validation Fetures
-  This Feature Will Verify WebMD Homepage
+Feature: WebMD Homepage Validation Feature
+
+  This Feature Will Verify WebMD Homepage Title, Color and take Screenshot 
 
 
  @Sprint1 @Validation
-  Scenario: Homepage Title and Screenshoot Verification
+ 
+  Scenario: Verify homepage title, color and screenshot 
     
     Given WebMD homepage launched
     

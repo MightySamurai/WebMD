@@ -17,7 +17,7 @@ public class WebMDBMIElementPage {
 	@FindBy(xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div[1]/form/div[2]/label/input")
 	public WebElement weight;
 	
-	@FindBy(xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div[1]/form/div[3]/button")
+	@FindBy(xpath = "//button[contains(text(),'Calculate')]")
 	public WebElement calcBtn;
 	
 	@FindBy (xpath = "//*[@id=\'ContentPane30\']/bmi-calculator/bmi-step/div/h3")

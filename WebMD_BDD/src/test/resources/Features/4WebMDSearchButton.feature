@@ -1,6 +1,6 @@
 Feature: WebMD search Engine Feature
   
-  This feature will test  WebMD search engine funcionality
+  This feature will test  WebMD search engine functionality
 
   Background: 
     Given WebMd login page launched

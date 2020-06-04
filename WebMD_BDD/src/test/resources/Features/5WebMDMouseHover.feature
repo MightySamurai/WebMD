@@ -1,5 +1,5 @@
 Feature: Webmd Mouse Hover Feature
-   This feature will test Webmd Mouse Hover funtionality 
+   This feature will test Webmd Mouse Hover functionality 
    
   
    
